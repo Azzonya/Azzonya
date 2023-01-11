@@ -97,7 +97,7 @@ func sendMessage(c *gin.Context) {
 	client := &http.Client{}
 
 	req, err := http.NewRequest("POST", "https://api.devino.online/sms/messages", c.Request.Body)
-	req.Header.Add("Authorization", "Key e6876ea2-d760-43bd-8024-445d586ce5ae")
+	req.Header.Add("Authorization", "Key ")
 	req.Header.Add("Content-Type", "application/json")
 
 	resp, err := client.Do(req)
